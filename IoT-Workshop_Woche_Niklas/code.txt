@@ -1,0 +1,82 @@
+import pandas as pd
+
+df = pd.read_csv(
+    'C:/Users/Workshop/Desktop/IoT-Workshop_Woche/ProdTag_12_05_2021.csv', sep=';')
+
+df = df.reset_index()  # make sure indexes pair with number of rows
+
+
+idList = [1]
+
+werkstueckID = 1
+
+counter = 1  # zählt die der werkstueckID bisher zugerordneten Zeilen. Wechselt die ID bevor der Counter bei 6 ist, wird für die Zeile 'error' eingetragen
+
+errorCounter = 0
+
+for index, row in df.iterrows():
+
+    if index == 0:
+
+        # falls es sich um die erste Zeile handelt, Inhalte speichern und mit nächster Iteration fortfahren
+        lastRowList = [row['Produktvariante'], row['Prozessschritt'], row['Auftragsnummer'], row['Prozessbeschreibung'],
+                       row['Prozessnummer'], row['Startdatum'], row['Startzeit'], row['Enddatum'], row['Endzeit'], row['Arbeitsstation'], row['Transportzeit']]
+        continue
+
+    if (row['Produktvariante'] == lastRowList[0]) & (row['Prozessschritt'] == lastRowList[1] + 10) & (row['Auftragsnummer'] == lastRowList[2]):
+
+        idList.append(werkstueckID)
+        counter += 1
+
+    else:
+        if counter < 6:
+            for x in range(counter):
+                idList[len(idList)-1 - x] = 'error'
+                errorCounter+= 1
+
+            # idList.append('error')
+
+        werkstueckID += 1
+        idList.append(werkstueckID)
+        counter = 1
+
+    lastRowList = [row['Produktvariante'], row['Prozessschritt'], row['Auftragsnummer'], row['Prozessbeschreibung'],
+                   row['Prozessnummer'], row['Startdatum'], row['Startzeit'], row['Enddatum'], row['Endzeit'], row['Arbeitsstation'], row['Transportzeit']]
+
+# print(idList)
+# print(lastRowList[1])
+
+# print(idList[100])
+
+# Liste mit IDs und error hinzufügen
+df['werkstueckID'] = idList
+
+errorIndexList = []
+errorPostion = 2
+
+#print("errorCounter hat gezaehlt " + str(errorCounter))
+
+for index, row in df.iterrows():
+        if row['werkstueckID'] == 'error':
+            errorIndexList.append(errorPostion)
+        errorPostion += 1
+    
+
+#print(df.loc[df['werkstueckID'] == 'error'].info())
+
+#print(df.loc[df['werkstueckID'] == 'error'])
+
+#dfError = df[df['werkstueckID'] == 'error']
+
+#dfError.to_csv('C:/Users/Workshop/Desktop/IoT-Workshop_Woche/errorList.csv', sep=';')
+
+#df.to_csv('C:/Users/Workshop/Desktop/IoT-Workshop_Woche/ProdError.csv', sep=';')
+
+#df.to_csv('/Users/JensRosenkranz/Downloads/errorList.csv', sep=';')
+
+#dfError
+
+#print(errorIndexList)
+#print(len(errorIndexList))
+
+#df.loc[min('Startzeit')]

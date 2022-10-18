@@ -1,0 +1,15 @@
+Expose 
+
+Thema: DataScience 
+
+Subthema: Datenaufbereitung (Bottom-Up oder Top-Down -> verschiedene Ansätze) 
+
+- Wann braucht man welche Daten und in welcher Form werden diese benötigt 
+- Wer benötigt welche Daten 
+- Leitfaden für Auftraggeber (welche Daten brauche ich überhaupt?) 
+- bestehende Methodiken bewerten 
+- evtl. Baumdiagramm 
+- welche Möglichkeiten gibt es 
+
+
+Niklas: Thema: 

@@ -1,0 +1,18 @@
+Präsentation
+
+Inhalte: 
+- Einführung (Big Data) und Data Science (Was heißt das, was kann man damit machen, welche Beispiele gibt es (Cambridge Analytica
+)
+- Aufgabenstellung beschreiben (Produktionslinie, Auftraggeber, Optimierungspotentiale, Datenpaket,...) 
+- keine einheitliche Herangehensweise -> Methode von Rollins (10 Fragen) 
+- Datenaufbereitung + Nutzung von Pandas(entdeckte Fehler/Unvollständigkeiten; leere Zeilen; unlogische Werte) 
+  -> inwieweit konnten die Fehler korrigiert/behoben werden
+- Datenanalyse (Herangehensweise, Methodik, Entdeckungen) 
+- Datenvisualisierung
+- Ergebnisse / Verbesserungsvorschläge
+
+1. Julien	
+2. Julien
+3. Jens
+4. Yara
+5. Niklas 

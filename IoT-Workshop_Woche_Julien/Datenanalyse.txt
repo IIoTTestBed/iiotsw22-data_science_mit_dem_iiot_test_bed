@@ -1,0 +1,51 @@
+- Transportzeit 
+- Durchlaufzeit pro Einheit 
+- Bearbeitungszeit 
+- Dauer pro Variante 
+- Arbeitsstationen pro Variante 
+- Wartezeiten berücksichtigen/ermitteln 
+- mögliche Rüstzeiten beachten
+- längste Bearbeitungszeit
+- Transportzeit + Bearbeitungszeit = Gesamtzeit 
+	-> wenn GZx-1 < GZx dann Engpass 
+- 5 gibt es 2 mal als Arbeitsstation 
+- Engpass bei Arbeitsstation 8 
+
+
+count
+
+selectAS.groupby 
+describe (Statistik) 
+selectAS_PV.groupby("Arbeitsstation","Produktvariante").describe()
+
+
+zeigen wie man sich alle möglichen Werte anzeigen lässt
+
+
+
+
+
+AS:1 BZ=15sek.   TZ= 0sek.		GZ=15sek. 
+AS:2 BZ=2sek.	 TZ= 96sek.		GZ=98sek.
+AS:3 BZ=106sek.	 TZ= 59sek.		GZ=165sek. 
+AS:4 BZ=3sek.	 TZ= 13sek.		GZ=16sek.
+AS:5 BZ=2sek.	 TZ= 124sek.		GZ=126sek.
+AS:6 BZ=12sek.	 
+
+
+- Warum arbeitet die Maschine so langsam? -> kann man das beschleunigen? (manuelle Rüstprozesse)
+
+
+- Gibt es die Option eine weitere hinzuzufügen? 
+
+
+
+Visualisierung: 
+
+- Kreisdiagramm: Anteile der 6 Arbeitsschritte je Variante; Bearbeitungszeit je Arbeitsschritt; 
+
+- Punktdiagramm: Aufzeigen von Ausreißern (594sek.)
+
+- Balkendiagramm: Durchlaufzeiten der untersch. Varianten; 
+
+- Mediane von BZ je Produktvariante -> je Variante Kreisdiagramm mit 6 Abschnitten 

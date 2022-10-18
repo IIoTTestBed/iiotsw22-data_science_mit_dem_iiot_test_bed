@@ -1,0 +1,25 @@
+V01 Notizen 
+
+- Problem muss klar sein (definiert)
+- Formulierung einer klar def. Frage -> Verständnis des Ziels der Interessengruppe ist notwendig 
+- keine standardisierte Methode vorhanden 
+- Vorschlag: Methodik von John B. Rollins -> 1. Schritt: Problemverständnis 
+	-> wenn man sich Klarheit über das zu lösende Problem verschafft, kann man bestimmen, 
+	   welche Daten zur Beantwortung der Kernfrage verwendet werden sollen
+	-> als Orientierung dienen 10 Fragen: 
+
+	Vom Problem zum Lösungsansatz
+	01. Was ist das Problem, welches es zu lösen gilt?
+	02. Wie kann das Problem mit Hilfe von Daten gelöst werden?
+
+	Arbeiten mit Daten
+	03. Welche Daten werden zur Beantwortung der Frage benötigt?
+	04. Woher kommen die Daten (Datenquellen) und wie ist der Zugang zu den Daten?
+	05. Sind die Daten ausreichend und repräsentativ, um das Problem zu lösen?
+	06. Was ist an zusätzlicher Arbeit zu unternehmen, um mit den Daten arbeiten zu können?
+
+	Herleiten der Lösung
+	07. Wie können die Daten visuell aufbereitet werden, um zur Lösung zu gelangen bzw. diese darzustellen?
+	08. Lässt sich das Problem anhand der verfügbaren Daten tatsächlich lösen oder werden Anpassungen benötigt?
+	09. Kann das Vorgehen auch auf weitere Daten angewendet werden?
+	10. Lässt sich das Problem zufriedenstellen lösen?
